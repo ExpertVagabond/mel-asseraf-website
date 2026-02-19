@@ -1,0 +1,121 @@
+/* === Classes & Events Page Styles === */
+
+.classes-hero {
+  min-height: 50vh;
+}
+
+.classes-services {
+  padding: var(--space-section) 0;
+}
+
+.service-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-md);
+  text-align: center;
+  transition: transform var(--duration-med) var(--ease-out),
+              box-shadow var(--duration-med) var(--ease-out);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.service-card__icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.service-card__title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h3);
+  margin-bottom: 0.5rem;
+}
+
+.service-card__text {
+  color: var(--color-charcoal-light);
+  font-size: var(--fs-small);
+  margin-bottom: var(--space-sm);
+}
+
+.service-card__clients {
+  font-size: var(--fs-caption);
+  color: var(--color-charcoal-light);
+  font-style: italic;
+  margin-bottom: var(--space-sm);
+}
+
+/* Club Patisserie feature */
+.classes-club {
+  background: var(--color-blush);
+  padding: var(--space-section) 0;
+}
+
+.classes-club__inner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.classes-club__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+  margin: var(--space-md) 0;
+  text-align: left;
+}
+
+.classes-club__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: var(--fs-small);
+}
+
+.classes-club__feature::before {
+  content: '\2713';
+  color: var(--color-champagne-gold);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Testimonials */
+.classes-testimonials {
+  padding: var(--space-section) 0;
+}
+
+.testimonial {
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.testimonial__quote {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: var(--fs-h3);
+  line-height: 1.5;
+  margin-bottom: var(--space-sm);
+}
+
+.testimonial__name {
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-uppercase);
+  color: var(--color-champagne-gold);
+}
+
+/* FAQ */
+.classes-faq {
+  padding: var(--space-section) 0;
+  background: var(--color-cream-dark);
+}
+
+.classes-faq .accordion {
+  max-width: 700px;
+  margin: 0 auto;
+}

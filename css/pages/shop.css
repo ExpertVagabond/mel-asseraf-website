@@ -1,0 +1,71 @@
+/* === Shop Page Styles === */
+
+.shop-hero {
+  min-height: 45vh;
+}
+
+.shop-products {
+  padding: var(--space-section) 0;
+}
+
+.shop-category {
+  margin-bottom: var(--space-xl);
+}
+
+.shop-category:last-child {
+  margin-bottom: 0;
+}
+
+.shop-category__header {
+  margin-bottom: var(--space-md);
+}
+
+.shop-category__title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h2);
+}
+
+.shop-category__text {
+  color: var(--color-charcoal-light);
+  margin-top: 0.5rem;
+}
+
+.shop-card .card__image {
+  aspect-ratio: 1;
+  background: var(--color-cream-dark);
+}
+
+.shop-card .card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.shop-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+/* Guide callout */
+.shop-guide {
+  background: var(--color-cream-dark);
+  padding: var(--space-section) 0;
+}
+
+.shop-guide__inner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.shop-guide__inner p {
+  color: var(--color-charcoal-light);
+  margin-bottom: var(--space-md);
+}
+
+/* CTA */
+.shop-cta {
+  background: var(--color-blush);
+}

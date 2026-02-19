@@ -1,0 +1,66 @@
+/* === Home Page Styles === */
+
+/* Credentials bar animation */
+.home-credentials {
+  background: var(--color-cream-dark);
+}
+
+/* Cookbook feature section */
+.home-cookbook {
+  padding: var(--space-section) 0;
+}
+
+.home-cookbook__cover {
+  border: 2px solid var(--color-champagne-gold);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.home-cookbook__cover img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.home-cookbook__details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.home-cookbook__price {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-charcoal-light);
+}
+
+/* As Seen In */
+.home-press {
+  padding: var(--space-lg) 0;
+  text-align: center;
+}
+
+/* Shop preview */
+.home-shop {
+  padding: var(--space-section) 0;
+}
+
+/* Instagram section */
+.home-instagram {
+  padding: var(--space-section) 0;
+}
+
+.home-instagram .instagram-grid__item {
+  background: var(--color-cream-dark);
+}
+
+.home-instagram .instagram-grid__item:nth-child(even) {
+  background: var(--color-blush);
+}
+
+/* CTA Banner */
+.home-cta {
+  background: var(--color-blush);
+}

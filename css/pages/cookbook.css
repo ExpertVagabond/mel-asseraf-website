@@ -1,0 +1,238 @@
+/* === Cookbook Page === */
+
+/* --- Split Hero --- */
+.hero-split {
+  padding-top: calc(var(--nav-height) + var(--space-xl));
+  padding-bottom: var(--space-xl);
+  background: var(--color-cream);
+}
+
+.hero-split__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .hero-split__inner {
+    grid-template-columns: 2fr 3fr;
+    gap: var(--space-xl);
+  }
+}
+
+/* --- Cookbook Cover --- */
+.hero-split__cover {
+  aspect-ratio: 3 / 4;
+  border: 2px solid var(--color-champagne-gold);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.hero-split__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-split__cover .placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--color-cream-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-charcoal-light);
+  font-family: var(--font-body);
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-uppercase);
+}
+
+/* --- Book Details --- */
+.hero-split__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.hero-split__details .badge {
+  margin-bottom: var(--space-sm);
+  align-self: flex-start;
+}
+
+.hero-split__title {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-heading);
+  margin-bottom: 0.5rem;
+}
+
+.hero-split__subtitle {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: var(--fs-h3);
+  color: var(--color-champagne-gold);
+  margin-bottom: 0.25rem;
+}
+
+.hero-split__author {
+  font-size: var(--fs-body);
+  color: var(--color-charcoal-light);
+  margin-bottom: var(--space-sm);
+}
+
+.hero-split__divider {
+  width: 60px;
+  height: 1px;
+  background: var(--color-champagne-gold);
+  opacity: 0.5;
+  margin: var(--space-sm) 0;
+}
+
+.hero-split__meta {
+  font-size: var(--fs-small);
+  color: var(--color-charcoal-light);
+  margin-bottom: 0.25rem;
+}
+
+.hero-split__meta:last-of-type {
+  margin-bottom: var(--space-sm);
+}
+
+.hero-split__buy-heading {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h3);
+  margin-bottom: var(--space-sm);
+}
+
+.hero-split__buy-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* --- Book Description --- */
+.book-description {
+  padding: var(--space-section) 0;
+}
+
+.book-description p {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-charcoal-light);
+}
+
+.book-description p + p {
+  margin-top: 1em;
+}
+
+/* --- Recipe Category Cards --- */
+.card__image-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  background: var(--color-cream-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-charcoal-light);
+  font-family: var(--font-body);
+  font-size: var(--fs-caption);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-uppercase);
+}
+
+/* --- Author Note --- */
+.author-note__portrait {
+  aspect-ratio: 3 / 4;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  max-width: 420px;
+}
+
+.author-note__portrait .placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--color-cream-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-charcoal-light);
+  font-family: var(--font-body);
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-uppercase);
+}
+
+.author-note__portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author-note__signature {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: var(--fs-h3);
+  color: var(--color-champagne-gold);
+  margin-top: var(--space-sm);
+}
+
+/* --- Quote Cards --- */
+.quote-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-md);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  transition: transform var(--duration-med) var(--ease-out),
+              box-shadow var(--duration-med) var(--ease-out);
+}
+
+.quote-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.quote-card__icon {
+  font-family: var(--font-accent);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--color-champagne-gold);
+  margin-bottom: 0.5rem;
+}
+
+.quote-card__text {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-sm);
+}
+
+.quote-card__line {
+  width: 40px;
+  height: 1px;
+  background: var(--color-champagne-gold);
+  margin: 0 auto var(--space-xs);
+}
+
+.quote-card__attribution {
+  font-family: var(--font-body);
+  font-size: var(--fs-caption);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-uppercase);
+  color: var(--color-champagne-gold);
+}

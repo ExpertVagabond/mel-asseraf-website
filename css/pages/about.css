@@ -1,0 +1,96 @@
+/* === About Page Specific Styles === */
+
+/* Bio Split Layout */
+.about-bio {
+  padding: var(--space-section) 0;
+}
+
+.about-bio .split__image {
+  aspect-ratio: 3 / 4;
+  background-color: var(--color-cream-dark);
+}
+
+.about-bio .split__image img {
+  aspect-ratio: 3 / 4;
+}
+
+.about-bio__text p {
+  color: var(--color-charcoal-light);
+  margin-bottom: 1.5em;
+}
+
+.about-bio__text p:first-child::first-letter {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 700;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.5rem;
+  margin-top: 0.1em;
+  color: var(--color-champagne-gold);
+}
+
+/* Timeline Section */
+.about-timeline {
+  padding: var(--space-section) 0;
+  background-color: var(--color-white);
+}
+
+.about-timeline .timeline {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Paris Quote Section */
+.about-quote {
+  background-color: var(--color-cream-dark);
+  padding: var(--space-section) 0;
+}
+
+/* Press Logos Section */
+.about-press {
+  padding: var(--space-section) 0;
+}
+
+.about-press .logo-grid {
+  padding: var(--space-md) 0;
+}
+
+/* Vision Section */
+.about-vision {
+  padding: var(--space-section) 0;
+}
+
+.about-vision__body {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-vision__body p {
+  color: var(--color-charcoal-light);
+  margin-bottom: var(--space-md);
+}
+
+/* Image Placeholder */
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-cream-dark);
+  color: var(--color-charcoal-light);
+  font-family: var(--font-body);
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-uppercase);
+  opacity: 0.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .about-bio .split__image {
+    max-height: 500px;
+  }
+}

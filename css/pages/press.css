@@ -1,0 +1,121 @@
+/* === Press & Media Page Styles === */
+
+.press-hero {
+  min-height: 45vh;
+}
+
+/* Media logos */
+.press-logos {
+  padding: var(--space-section) 0;
+  text-align: center;
+}
+
+.press-logos .logo-grid__item {
+  font-size: 1.25rem;
+  padding: var(--space-sm) var(--space-md);
+}
+
+/* Appearances sections */
+.press-section {
+  padding: var(--space-section) 0;
+}
+
+.press-section:nth-child(even) {
+  background: var(--color-cream-dark);
+}
+
+.press-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.press-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-cream-dark);
+}
+
+.press-item:last-child {
+  border-bottom: none;
+}
+
+.press-item__outlet {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h3);
+  min-width: 160px;
+  flex-shrink: 0;
+}
+
+.press-item__description {
+  color: var(--color-charcoal-light);
+  font-size: var(--fs-small);
+}
+
+.press-item__link {
+  color: var(--color-champagne-gold);
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-uppercase);
+  transition: color var(--duration-fast);
+  white-space: nowrap;
+}
+
+.press-item__link:hover {
+  color: var(--color-gold-metallic);
+}
+
+/* Collaborations */
+.press-collabs {
+  padding: var(--space-section) 0;
+}
+
+.collab-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.collab-card__title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h3);
+  margin-bottom: 0.5rem;
+}
+
+.collab-card__text {
+  color: var(--color-charcoal-light);
+  font-size: var(--fs-small);
+}
+
+/* Press kit CTA */
+.press-contact {
+  padding: var(--space-section) 0;
+  background: var(--color-cream-dark);
+  text-align: center;
+}
+
+.press-contact p {
+  color: var(--color-charcoal-light);
+  margin-bottom: var(--space-sm);
+}
+
+.press-contact a {
+  color: var(--color-champagne-gold);
+}
+
+.press-contact a:hover {
+  color: var(--color-gold-metallic);
+}
+
+@media (max-width: 767px) {
+  .press-item {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .press-item__outlet {
+    min-width: unset;
+  }
+}
