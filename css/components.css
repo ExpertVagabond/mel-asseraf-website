@@ -255,8 +255,6 @@
 }
 
 .logo-grid__item {
-  opacity: 0.6;
-  filter: grayscale(100%);
   transition: all var(--duration-med) var(--ease-out);
   font-family: var(--font-heading);
   font-size: 1.125rem;
@@ -265,12 +263,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.75;
 }
 
 .logo-grid__item:hover {
   opacity: 1;
-  filter: grayscale(0%);
-  color: var(--color-charcoal);
+  transform: scale(1.05);
 }
 
 .logo-grid__item img {
