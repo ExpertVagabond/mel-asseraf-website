@@ -255,19 +255,33 @@
 }
 
 .logo-grid__item {
-  opacity: 0.5;
+  opacity: 0.6;
   filter: grayscale(100%);
   transition: all var(--duration-med) var(--ease-out);
   font-family: var(--font-heading);
   font-size: 1.125rem;
   font-weight: 600;
   color: var(--color-charcoal-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-grid__item:hover {
   opacity: 1;
   filter: grayscale(0%);
   color: var(--color-charcoal);
+}
+
+.logo-grid__item img {
+  max-height: 45px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+}
+
+.logo-grid__item--tall img {
+  max-height: 60px;
 }
 
 /* === Section Header === */
